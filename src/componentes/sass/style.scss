@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('/src/componentes/sass/_banner.scss');
+
+:root {
+    --banner-color: #5457C7
+    --background-color: #131313
+    --highlight-color: #A2FFF9
+
+    --ux-background: rgba(94, 41, 199, 0.205)
+    --ux-color: #5D29C7
+    --front-background: rgba(0, 157, 255, 0.205)
+    --front-color: #3572CD
+    --back-background: rgba(0, 255, 225, 0.205)
+    --back-color: #3FA8A3
+    --data-background: rgba(0, 255, 128, 0.205)
+    --data-color: #50A83F
+
+    --font: "Josefin Sans", sans-serif
+
+
+}
