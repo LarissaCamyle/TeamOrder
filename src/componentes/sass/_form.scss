@@ -1,0 +1,37 @@
+.form{
+    border: 5px solid var(--banner-color);
+    margin: 5rem 4rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+
+    h1{
+        background: var(--banner-color);
+        padding: 0;
+        margin: 0;
+        padding: 0.9rem 0.5rem;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        font-size: 1.7rem;
+        border-radius: 10px 10px 0px 0px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1180px){
+    .form{
+        margin: 7rem 10rem;
+    }
+    
+}
+
+@media screen and (min-width: 1180px){
+    .form{
+        margin: 7rem 20rem;
+    }
+    
+}
