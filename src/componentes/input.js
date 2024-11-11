@@ -1,6 +1,7 @@
 function Input (props) {
     return(
-        <input placeholder={props.placeholder}></input>
+        //     se for true o campo se torna obrigatorio
+        <input required={props.inputRequired} placeholder={props.placeholder}></input>
     )
 }
 

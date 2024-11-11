@@ -1,0 +1,15 @@
+select{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0rem 1.5rem;
+    border: 3px solid var(--highlight-color);
+    background-color: var(--background-color);
+    border-radius: 20px;
+    list-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+    cursor: pointer;
+}
+

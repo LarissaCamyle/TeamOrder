@@ -1,0 +1,18 @@
+button{
+    background-color: var(--banner-color);
+    font-family: var(--font);
+    font-size: 1.4rem;
+    color: white;
+    padding: 0.8rem 0.8rem 0.5rem 0.8rem;
+    width: 10rem;
+    margin: 0rem auto;
+    border: none;
+    border-radius: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover{
+    transform: scale(1.1);
+}

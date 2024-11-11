@@ -2,6 +2,8 @@
 @import url("/src/componentes/sass/__input.scss");
 @import url("/src/componentes/sass/_form.scss");
 @import url("/src/componentes/sass/_banner.scss");
+@import url("/src/componentes/sass/_comboBox.scss");
+@import url("/src/componentes/sass/_button.scss");
 :root {
   --banner-color: #5457C7;
   --background-color: #131313;
