@@ -1,0 +1,30 @@
+.ux-ui{
+    background-color: var(--ux-background);
+}
+
+.front-end{
+    background-color: var(--front-background);
+}
+
+.back-end{
+    background-color: var(--back-background);
+}
+
+.data-science{
+    background-color: var(--data-background);
+}
+
+.ux-ui, .front-end, .back-end, .data-science{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    
+    h3{
+        font-size: 1.4rem;
+        padding: 1rem 0rem 0.5rem 0rem;
+        text-align: center;
+    }
+}
