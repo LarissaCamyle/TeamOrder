@@ -1,0 +1,61 @@
+.card-ux-ui-div{
+    background-color: var(--ux-color);
+}
+
+.card-front-end-div{
+    background-color: var(--front-color);
+}
+
+.card-back-end-div{
+    background-color: var(--back-color);
+}
+
+.card-data-science-div{
+    background-color: var(--data-color);
+}
+
+.card-ux-ui, .card-front-end, .card-back-end, .card-data-science{
+    background: var(--background-color);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 13rem;
+    margin: 1rem;
+
+    .card-ux-ui-div, .card-front-end-div, 
+    .card-back-end-div, .card-data-science-div{
+        height: 6.5rem;
+        width: 15rem;
+        margin-left: -1rem;
+        margin-top: -1rem;
+        border-radius: 30px 30px 0px 00px;
+        position:absolute;
+        z-index: 1;
+    }
+
+    .div-img{
+        height: 9rem;
+        width: 9rem;
+        border-radius: 100%;
+        position: relative;
+        z-index: 1;
+        background-color: rgb(37, 36, 36);
+        margin: 0rem auto;
+    }
+    
+    img{
+        height: 9rem;
+        border-radius: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    
+    h2{
+        font-size: 1.3rem;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+}

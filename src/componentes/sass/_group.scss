@@ -14,13 +14,19 @@
     background-color: var(--data-background);
 }
 
+.cards-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .ux-ui, .front-end, .back-end, .data-science{
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    margin-bottom: 3rem;
     
     h3{
         font-size: 1.4rem;

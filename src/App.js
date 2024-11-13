@@ -18,12 +18,14 @@ function App() {
     return (
       <div className="App">
         <Banner/>
-        <Form registeredCollaborator={collaborator => addCollaborator(collaborator)}/>
-        <Group name="UX / UI" class="ux-ui"/>
-        <Group name="Front-End" class="front-end"/>
-        <Group name="Back-End" class="back-end"/>
-        <Group name="Data Science" class="data-science"/>
 
+        <Form registeredCollaborator={collaborator => addCollaborator(collaborator)}/>
+
+        <Group name="UX / UI" class="ux-ui" collaborators={collaborators} />
+        <Group name="Front-End" class="front-end" collaborators={collaborators} />
+        <Group name="Back-End" class="back-end" collaborators={collaborators} />
+        <Group name="Data Science" class="data-science" collaborators={collaborators} />
+        
       </div>
     );
 }
