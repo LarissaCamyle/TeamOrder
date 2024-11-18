@@ -11,7 +11,8 @@ function Form (props) {
     const [name, setName] = useState('')
     const [position, setPosition] = useState('')
     const [img, setImg] = useState('')
-    const [group, setGroup] = useState('')
+    //se tiver vazio recebe por padrao o ux ui
+    const [group, setGroup] = useState('UX / UI')
 
     const groups = [
         'UX / UI',
@@ -28,6 +29,12 @@ function Form (props) {
             img,
             group
         })
+        //limpa o form depois de salvar
+        setName('')
+        setGroup('')
+        setImg('')
+        setPosition('')
+        
     }
 
     return(

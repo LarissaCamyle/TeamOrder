@@ -8,7 +8,7 @@ function Input (props) {
     return(
         //                                               se for true o campo se torna obrigatorio
         //                        se digitar chama a funcao 
-        <input value={props.valor} onChange={whenTyping} required={props.inputRequired} placeholder={props.placeholder}></input>
+        <input value={props.value} onChange={whenTyping} required={props.inputRequired} placeholder={props.placeholder}></input>
     )
 }
 

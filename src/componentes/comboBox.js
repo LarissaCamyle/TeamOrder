@@ -3,7 +3,7 @@ import './sass/style.css'
 function ComboBox (props) {
     return(
         <select 
-            onChange={event => props.whenChange(event.target.value)} 
+            onChange={event => props.whenChange(event.target.value )} 
             value={props.value} 
             required={props.inputRequired} 
             class="select-group">
