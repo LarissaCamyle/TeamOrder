@@ -21,6 +21,7 @@ function Group (props){
                             position={collaborator.position}
                             img={collaborator.img}
                             group={collaborator.group}
+                            key={collaborator.name}
                         />)
                     }
                 </section>

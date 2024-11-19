@@ -10,6 +10,9 @@ function App() {
     const [collaborators, setCollaborators] = useState([])
 
     const addCollaborator = (collaborator) => {
+      if(collaborator.group == ""){
+        collaborator.group= 'UX / UI'
+      } 
       console.log(collaborator)
       //adiciona o novo colaborador ao array
       setCollaborators([...collaborators, collaborator])

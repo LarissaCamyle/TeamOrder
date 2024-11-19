@@ -13,3 +13,10 @@ select{
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    select{
+        width: 95%;
+        font-size: 1.1rem;
+        margin: 0rem auto;
+    }
+}

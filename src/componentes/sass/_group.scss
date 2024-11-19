@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .ux-ui, .front-end, .back-end, .data-science{
@@ -27,6 +28,7 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
     
     h3{
         font-size: 1.4rem;
