@@ -8,6 +8,10 @@ function Group (props){
     //filtrar os colaboradores de acordo cm o nome do grupo para printar corretamente
     let collaboratorsFiltered = props.collaborators.filter(collaborator => collaborator.group === props.name)
 
+    function deletarCard(){
+        console.log("Deletando colaborador")
+    }
+
     //se tiver colaboradores printa, se n tiver fica em branco
     if(collaboratorsFiltered.length > 0){
         return(
@@ -22,6 +26,7 @@ function Group (props){
                             img={collaborator.img}
                             group={collaborator.group}
                             key={collaborator.name}
+                            aoDeletar={deletarCard}
                         />)
                     }
                 </section>

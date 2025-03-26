@@ -10,6 +10,7 @@ function Card (props){
             </div>
             <h2>{props.name}</h2>
             <h3>{props.position}</h3>
+            <button className="deletar">Deletar</button>
         </section>
     )
 }

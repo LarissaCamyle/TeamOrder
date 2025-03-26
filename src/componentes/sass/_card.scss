@@ -14,6 +14,7 @@
     background-color: var(--data-color);
 }
 
+
 .card-ux-ui, .card-front-end, .card-back-end, .card-data-science{
     background: var(--background-color);
     border-radius: 30px;
@@ -57,5 +58,19 @@
 
     h3{
         font-size: 1.1rem;
+    }
+
+    .deletar{
+        border: 1px solid red;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        color: red;
+        background: none;
+        font-size: 1rem;
+        width: 6rem;
+    }
+    
+    .deletar:hover{
+        transform:scale(1.1);
     }
 }
