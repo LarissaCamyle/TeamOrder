@@ -9,13 +9,18 @@ function Group (props){
     let collaboratorsFiltered = props.collaborators.filter(collaborator => collaborator.group === props.name)
 
     function deletarCard(){
-        console.log("Deletando colaborador")
+        console.log("Deletando colaborador");
     }
+
+    let corSecundaria;
 
     //se tiver colaboradores printa, se n tiver fica em branco
     if(collaboratorsFiltered.length > 0){
+        
         return(
             <section className={props.class}>
+                
+                <input value={corSecundaria} onChange={evento => props.mudarCor(evento.target.value, props.class)} type='color' className='input-color'></input>
                 <h3>{props.name}</h3>
                 <section className='cards-list'>
                     {collaboratorsFiltered.map(collaborator =>

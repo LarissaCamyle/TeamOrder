@@ -22,7 +22,7 @@
 }
 
 .ux-ui, .front-end, .back-end, .data-science{
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,5 +34,13 @@
         font-size: 1.4rem;
         padding: 1rem 0rem 0.5rem 0rem;
         text-align: center;
+    }
+
+    .input-color{
+        border: none;
+        width: 5rem;
+        height: 3rem;
+        background-color: transparent;
+        margin-left: auto;
     }
 }

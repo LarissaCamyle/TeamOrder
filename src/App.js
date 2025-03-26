@@ -18,16 +18,28 @@ function App() {
       setCollaborators([...collaborators, collaborator])
     }
 
+    function mudarCorDoGrupo(cor, nome){
+      setCollaborators(collaborators.map(time => {
+        console.log(nome + Group.class)
+        //document.querySelector(`.${nome}`).style.background = cor;
+        if(Group.class == nome){
+          Group.corSecundaria = cor;
+          document.querySelector(`.${nome}`).style.background = cor;
+        }
+        return time;
+      }))
+    }
+
     return (
       <div className="App">
         <Banner/>
 
         <Form registeredCollaborator={collaborator => addCollaborator(collaborator)}/>
 
-        <Group name="UX / UI" class="ux-ui" collaborators={collaborators} />
-        <Group name="Front-End" class="front-end" collaborators={collaborators} />
-        <Group name="Back-End" class="back-end" collaborators={collaborators} />
-        <Group name="Data Science" class="data-science" collaborators={collaborators} />
+        <Group name="UX / UI" class="ux-ui" collaborators={collaborators} mudarCor={mudarCorDoGrupo}/>
+        <Group name="Front-End" class="front-end" collaborators={collaborators} mudarCor={mudarCorDoGrupo}/>
+        <Group name="Back-End" class="back-end" collaborators={collaborators} mudarCor={mudarCorDoGrupo}/>
+        <Group name="Data Science" class="data-science" collaborators={collaborators} mudarCor={mudarCorDoGrupo}/>
         
       </div>
     );

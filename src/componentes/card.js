@@ -1,3 +1,5 @@
+import Group from "./group";
+
 function Card (props){
 
     let divClass = `${props.class}-div`
@@ -10,7 +12,7 @@ function Card (props){
             </div>
             <h2>{props.name}</h2>
             <h3>{props.position}</h3>
-            <button className="deletar">Deletar</button>
+            <button className="deletar" onClick={props.aoDeletar}>Deletar</button>
         </section>
     )
 }
