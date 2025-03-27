@@ -1,5 +1,6 @@
 import Banner from "./componentes/banner.js";
 import Input from "./componentes/input.js";
+import Footer from "./componentes/Footer.js";
 import Form from "./componentes/form.js";
 import { useState } from "react";
 import Group from "./componentes/group.js";
@@ -18,13 +19,19 @@ function App() {
       setCollaborators([...collaborators, collaborator])
     }
 
-    function mudarCorDoGrupo(cor, nome, group){
+    function mudarCorDoGrupo(corOriginal, corComOpacidade, nome, group){
       setCollaborators(collaborators.map(time => {
-        console.log(nome + " - " + group.class)
-        //document.querySelector(`.${nome}`).style.background = cor;
+        console.log(corOriginal)
         if(group.class == nome){
-          Group.corSecundaria = cor;
-          document.querySelector(`.${nome}`).style.background = cor;
+          //salvando as cores na classe group
+          Group.setCorCard = corComOpacidade;
+          Group.setCorBack = corOriginal;
+
+          //mudando as cores no html
+          document.querySelector(`.${nome}`).style.background = corOriginal;
+          document.querySelectorAll(`.card-${nome}-div`).forEach(div =>
+            div.style.background = corComOpacidade
+          )
         }
         return time;
       }))
@@ -40,6 +47,8 @@ function App() {
         <Group name="Front-End" class="front-end" collaborators={collaborators} mudarCor={mudarCorDoGrupo}/>
         <Group name="Back-End" class="back-end" collaborators={collaborators} mudarCor={mudarCorDoGrupo}/>
         <Group name="Data Science" class="data-science" collaborators={collaborators} mudarCor={mudarCorDoGrupo}/>
+
+        <Footer/>
         
       </div>
     );
