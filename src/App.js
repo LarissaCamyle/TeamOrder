@@ -18,11 +18,11 @@ function App() {
       setCollaborators([...collaborators, collaborator])
     }
 
-    function mudarCorDoGrupo(cor, nome){
+    function mudarCorDoGrupo(cor, nome, group){
       setCollaborators(collaborators.map(time => {
-        console.log(nome + Group.class)
+        console.log(nome + " - " + group.class)
         //document.querySelector(`.${nome}`).style.background = cor;
-        if(Group.class == nome){
+        if(group.class == nome){
           Group.corSecundaria = cor;
           document.querySelector(`.${nome}`).style.background = cor;
         }

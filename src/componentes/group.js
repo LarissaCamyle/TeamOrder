@@ -20,7 +20,7 @@ function Group (props){
         return(
             <section className={props.class}>
                 
-                <input value={corSecundaria} onChange={evento => props.mudarCor(evento.target.value, props.class)} type='color' className='input-color'></input>
+                <input value={corSecundaria} onChange={evento => props.mudarCor(evento.target.value, props.class, props)} type='color' className='input-color'></input>
                 <h3>{props.name}</h3>
                 <section className='cards-list'>
                     {collaboratorsFiltered.map(collaborator =>
