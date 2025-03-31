@@ -4,11 +4,29 @@ import Footer from "./componentes/Footer.js";
 import Form from "./componentes/form.js";
 import { useState } from "react";
 import Group from "./componentes/group.js";
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
 
     //array de colaboradores
-    const [collaborators, setCollaborators] = useState([])
+    const [collaborators, setCollaborators] = useState([
+      {
+        name: 'UX / UI',
+        class: 'ux-ui'
+      },
+      {
+        name: 'Front-End',
+        class: 'front-end'
+      },
+      {
+        name: 'Back-End',
+        class: 'back-end'
+      },
+      {
+        name: 'Data Science',
+        class: 'data-science'
+      }
+    ])
 
     const addCollaborator = (collaborator) => {
       if(collaborator.group == ""){
